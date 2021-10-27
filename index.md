@@ -1,6 +1,7 @@
 # Arch Linux Installation:
 ## Install Arch.iso File
 * Download, and make sure to verify the signature
+
 ## Boot in UEFI:
 Add `firmware="efi"` to the vmx file.
 Now, boot the VM.
@@ -51,6 +52,7 @@ Run the first command below, and then the second, to ensure that the clock is sy
       (empty)
       (empty)
       ~~~
+
 ## Create Swap Disk:
 ~~~
 # cfdisk
