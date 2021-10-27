@@ -1,6 +1,5 @@
 # Arch Linux Installation:
 ## Install Arch.iso File
----
 * Download, and make sure to verify the signature
 ## Boot in UEFI:
 Add `firmware="efi"` to the vmx file.
