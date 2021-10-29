@@ -192,12 +192,12 @@ Uncomment the line that says `include "/usr/share/nano/*.nanorc"`
 Uncomment `%sudo ALL=(ALL) ALL`.
 ## Install Useful Packages:
 ~~~
-# pacman -S man tree
+# pacman -S man tree git
 ~~~
+## Reboot:
+Reboot the machine, and everything should be good to go!
 ## Add Aliases:
 ~~~
 # nano .bashrc
 ~~~
 Add your prefered aliases in the form of `alias _______="_________"`
-## Reboot:
-Reboot the machine, and everything should be good to go!
