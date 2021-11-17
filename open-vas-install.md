@@ -16,3 +16,15 @@
 ~~~
 ## Open Web Browser to Display OpenVas:
 Go to https://localhost and enter username: `admin`, password: `admin`
+
+## Docker-Compose File:
+docker-compose.yml
+~~~
+version: '3.3'
+services:
+    openvas:
+        ports:
+            - '443:443'
+        container_name: openvas
+        image: mikesplain/openvas
+~~~
