@@ -65,5 +65,4 @@ Select the add button on the app, and select "Scan From QR Code". Scan the QR co
 ~~~
 # cat ~/wireguard/config/peer_pc1/peer_pc1.conf
 ~~~
-Copy the text from the config file.
-Click "Add Tunnel" -> "Add Empty Tunnel", and paste the copied text.
+Copy the text from the config file. Click "Add Tunnel" -> "Add Empty Tunnel", and paste the copied text.
