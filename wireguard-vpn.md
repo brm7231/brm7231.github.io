@@ -61,8 +61,13 @@ Install for phone and laptop.
 ~~~
 ## Add VPN Through WireGuard App:
 Select the add button on the app, and select "Scan From QR Code". Scan the QR code from the terminal.
+![Wireguard IP1](/Media/WireGuard-Android1.png)
+![Wireguard IP2](/Media/WireGuard-Android2.png)
+![Wireguard On](/Media/WireGuard-Android3.png)
+![Wireguard Settings](/Media/WireGuard-Android4.png)
 ## Copy the Config File for a Peer to Your Laptop:
 ~~~
 # cat ~/wireguard/config/peer_pc1/peer_pc1.conf
 ~~~
 Copy the text from the config file. Click "Add Tunnel" -> "Add Empty Tunnel", and paste the copied text.
+![Wireguard IP3](/Media/WireGuard-Windows.png)
