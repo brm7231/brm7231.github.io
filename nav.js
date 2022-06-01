@@ -5,5 +5,5 @@ fetch('../nav.html')
     let newelem = document.createElement("div");
     newelem.className = "container";
     newelem.innerHTML = text;
-    oldelem.parentNode.replaceChild(text,oldelem);
+    oldelem.parentNode.replaceChild(newelem,oldelem);
 })
