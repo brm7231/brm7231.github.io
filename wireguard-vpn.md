@@ -54,7 +54,7 @@ services:
 # docker-compose up -d
 ~~~
 ## Install WireGuard on Phone and Laptop:
-Install for phone and laptop.
+Install for phone and laptop. (Visit https://www.wireguard.com/install/)
 ## Find QR Code:
 ~~~
 # docker-compose logs -f wireguard
