@@ -2,7 +2,7 @@
 This is documentation for my home lab, including brilliant successes, demoralizing failures, and hours of laborious sysadmin hell.
 
 ## General:
-My home network is configured using virtual machines deployed through Proxmox VE: 
+My home network is configured using virtual machines deployed through <a href="https://www.proxmox.com/en/proxmox-ve">Proxmox VE</a>:
 
 ## Repos Setup:
 * `# mv /etc/apt/sources.list.d/pve-enterprise.list /etc/apt/sources.list.d/pve-enterprise.list.disabled`
