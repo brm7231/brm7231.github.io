@@ -17,6 +17,15 @@ This is how to set up the IP address for Proxmox. In my case, I needed to update
 * Change IP address and gateway address `# vim /etc/network/interfaces`
 * Also change `/etc/hosts` to reflect the IP address change
 
+
+## Machines:
+* Machines might best be created as ballooning - memory can be given a minimum and maximum.
+
+
+## Domain Controller Setup:
+* Download Windows Server 2019
+* 
+
 ## DNS:
 ### External DNS:
 This issue arose when, halfway through setting up the server, I was forced to switch to a router on a different subnet. This broke DNS since it was referencing the intial router at `192.168.1.254`, and the router it is now connected to is `192.168.86.1`.
@@ -36,5 +45,13 @@ For Windows to use DNS
 * Best:
   * Make the router use the DNS server, with a different backup DNS server
 
-## Machines:
-* Machines might best be created as ballooning - memory can be given a minimum and maximum.
+
+## Database Server:
+* Set up a virtual machine for the DB server to run on (I chose a minimal Ubuntu)
+* Update and upgrade `# apt update && apt upgrade -y`
+* Install phpmyadmin `# apt install phpmyadmin`
+* 
+
+
+
+
