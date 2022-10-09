@@ -5,4 +5,4 @@
 
 [WireGuard on Digital Ocean](wireguard-vpn.md)
 
-[Home Lab Setup](home-lab.md)
+[Home Lab Setup](home-lab.html)
