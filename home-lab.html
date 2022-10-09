@@ -3,10 +3,16 @@
 
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Blake McDonald">
+
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="/css/style.css" type="text/css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/js/script.js"></script>
@@ -18,17 +24,19 @@
         <div id="main_content_wrap" class="outer">
             <section id="main_content" class="inner">
                 <h1 id="home-project">Home Project:</h1>
-                <p>This is documentation for my home lab, including brilliant successes, demoralizing failures, and hours of
+                <p>This is documentation for my home lab, including brilliant successes, demoralizing failures, and
+                    hours of
                     laborious sysadmin hell.</p>
                 <h2 id="general">General:</h2>
                 <p>My home network is configured using virtual machines deployed through <a
                         href="https://www.proxmox.com/en/proxmox-ve">Proxmox VE</a>:</p>
                 <figure>
-                    <img src="/Media/PVE Login.png"/>
+                    <img src="/Media/PVE Login.png" />
                     <figcaption>My PVE Login Screen</figcaption>
                 </figure>
                 <h2 id="repos-setup">Repos Setup:</h2>
-                <p>The first thing to do is to set up the non enterprise sources for updates so that I can get updates for
+                <p>The first thing to do is to set up the non enterprise sources for updates so that I can get updates
+                    for
                     Proxmox.</p>
                 <ul>
                     <li><code
@@ -39,12 +47,14 @@
                     </li>
                 </ul>
                 <h2 id="ip-addressinginternet">IP Addressing/Internet:</h2>
-                <p>This is how to set up the IP address for Proxmox. In my case, I needed to update the static IP that I was
+                <p>This is how to set up the IP address for Proxmox. In my case, I needed to update the static IP that I
+                    was
                     using, because I switched subnets.</p>
                 <ul>
                     <li>Change IP address and gateway address <code
                             class="language-plaintext highlighter-rouge"># vim /etc/network/interfaces</code></li>
-                    <li>Also change <code class="language-plaintext highlighter-rouge">/etc/hosts</code> to reflect the IP
+                    <li>Also change <code class="language-plaintext highlighter-rouge">/etc/hosts</code> to reflect the
+                        IP
                         address change</li>
                 </ul>
                 <h2 id="machines">Machines:</h2>
@@ -63,12 +73,14 @@
                         class="language-plaintext highlighter-rouge">192.168.1.254</code>, and the router it is now
                     connected to is <code class="language-plaintext highlighter-rouge">192.168.86.1</code>.</p>
                 <p>If pve DNS is not resolving correctly, check <code
-                        class="language-plaintext highlighter-rouge">/etc/resolv.conf</code> and make sure the correct DNS
+                        class="language-plaintext highlighter-rouge">/etc/resolv.conf</code> and make sure the correct
+                    DNS
                     server is being used (should be same as router IP most likely).</p>
                 <h3 id="internal-dns">Internal DNS:</h3>
                 <p>Setup <code class="language-plaintext highlighter-rouge">dnsmasq</code>:</p>
                 <ul>
-                    <li>configure <code class="language-plaintext highlighter-rouge">/etc/hosts</code> file appropriately
+                    <li>configure <code class="language-plaintext highlighter-rouge">/etc/hosts</code> file
+                        appropriately
                     </li>
                     <li><code class="language-plaintext highlighter-rouge"># service dnsmasq restart</code></li>
                 </ul>
@@ -80,7 +92,8 @@
                             <li><code
                                     class="language-plaintext highlighter-rouge">interface ip set dns "[adapter name]" static [DNS IP address]</code>
                             </li>
-                            <li>If you have issues with static DNS servers not being removed when you set the adapter back
+                            <li>If you have issues with static DNS servers not being removed when you set the adapter
+                                back
                                 to using DHCP, check the registry under <code
                                     class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces</code>
                                 and clear the static DNS servers that have been setup for the appropriate adapter</li>
@@ -95,7 +108,8 @@
                 <ul>
                     <li>Set up a virtual machine for the DB server to run on (I chose a minimal Ubuntu)</li>
                     <li>Update and upgrade <code
-                            class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code></li>
+                            class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code>
+                    </li>
                     <li>Install phpmyadmin <code
                             class="language-plaintext highlighter-rouge"># apt install phpmyadmin</code></li>
                     <li></li>
