@@ -16,6 +16,64 @@
     <link href="/css/style.css" type="text/css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/js/script.js"></script>
+    <script>
+        jQuery(window).on('load', function () {
+            jQuery('.loader').fadeOut(500);
+        });
+    </script>
+    <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            background: white;
+        }
+
+        .spinner {
+            margin: 500px auto 0;
+            width: 70px;
+            text-align: center;
+        }
+
+        .d-table {
+            position: fixed;
+            top: -17%;
+            left: 25%;
+        }
+
+        .spinner>div {
+            width: 18px;
+            height: 18px;
+            background-color: darkslategrey;
+            border-radius: 100%;
+            display: inline-block;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .spinner .bounce1 {
+            animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes sk-bouncedelay {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1.0);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -109,16 +167,18 @@
                 <ul>
                     <li>Set up a virtual machine for the DB server to run on (I chose a minimal Ubuntu)</li>
                     <li>Update and upgrade <code
-                        class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code>
+                            class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code>
                     </li>
                     <li></li>
-                    <li>Finally, set up port forwarding from your router to the IP of your virtual machine and the port that OpenVPN is running on (default is 1194). (This process will be different for each router. Look up how to do it for your own router.)</li>
+                    <li>Finally, set up port forwarding from your router to the IP of your virtual machine and the port
+                        that OpenVPN is running on (default is 1194). (This process will be different for each router.
+                        Look up how to do it for your own router.)</li>
                 </ul>
                 <h2 id="database-server">Database Server:</h2>
                 <ul>
                     <li>Set up a virtual machine for the DB server to run on (I chose a minimal Ubuntu)</li>
                     <li>Add apache2 apt repository to get apache2 upgrades <code
-                        class="language-plaintext highlighter-rouge"># add-apt-repository ppa:ondrej/apache2</code>
+                            class="language-plaintext highlighter-rouge"># add-apt-repository ppa:ondrej/apache2</code>
                     </li>
                     <li>Update and upgrade <code
                             class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code>
@@ -131,7 +191,7 @@
                 <ul>
                     <li>Set up a virtual machine for the web server to run on (I chose a minimal Ubuntu)</li>
                     <li>Add apache2 apt repository to get apache2 upgrades <code
-                        class="language-plaintext highlighter-rouge"># add-apt-repository ppa:ondrej/apache2</code>
+                            class="language-plaintext highlighter-rouge"># add-apt-repository ppa:ondrej/apache2</code>
                     </li>
                     <li>Update and upgrade <code
                             class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code>
