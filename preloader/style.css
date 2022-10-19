@@ -14,6 +14,12 @@
     text-align: center;
 }
 
+.d-table {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
 .spinner>div {
     width: 18px;
     height: 18px;
