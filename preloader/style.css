@@ -1,6 +1,6 @@
 .loader {
     position: fixed;
-    top: 0;
+    top: 50%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -15,7 +15,7 @@
 .spinner > div {
     width: 18px;
     height: 18px;
-    background-color: orangered;
+    background-color: darkslategrey;
     border-radius: 100%;
     display: inline-block;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
