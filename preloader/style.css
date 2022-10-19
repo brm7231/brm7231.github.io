@@ -9,15 +9,15 @@
 }
 
 .spinner {
-    margin: 500px auto 0;
+    margin: 0;
     width: 70px;
     text-align: center;
 }
 
 .d-table {
     position: fixed;
-    top: -17%;
-    left: 25%;
+    top: 50%;
+    left: 47%;
 }
 
 .spinner>div {
