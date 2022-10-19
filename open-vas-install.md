@@ -32,12 +32,12 @@ services:
 ## Images:
 Docker Start Screen:
 
-![Docker Start Screen](/Media/OpenVas-Dashboard.jpg)
+![Docker Start Screen](/images/OpenVas-Dashboard.jpg)
 
 Running Scan:
 
-![Running Scan](/Media/OpenVas-Running.jpg)
+![Running Scan](/images/OpenVas-Running.jpg)
 
 After Scan:
 
-![After Scan](/Media/OpenVas-Finished.jpg)
+![After Scan](/images/OpenVas-Finished.jpg)

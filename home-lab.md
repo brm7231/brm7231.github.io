@@ -4,7 +4,7 @@ This is documentation for my home lab, including brilliant successes, demoralizi
 ## General:
 My home network is configured using virtual machines deployed through <a href="https://www.proxmox.com/en/proxmox-ve">Proxmox VE</a>:
 
-<img src="/Media/PVE Login.png">
+<img src="/images/PVE Login.png">
 
 ## Repos Setup:
 The first thing to do is to set up the non enterprise sources for updates so that I can get updates for Proxmox.
