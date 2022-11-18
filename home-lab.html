@@ -138,6 +138,13 @@
                             class="language-plaintext highlighter-rouge"># apt update &amp;&amp; apt upgrade -y</code>
                     </li>
                 </ul>
+                <h2 id="backup-upgrade">Backup and Upgrade:</h2>
+                <ul>
+                    <li>Eventually I began to run out of space. I requisitioned 4 1TB HDDs from a source and added them to my server, but they did not show up.</li>
+                    <li>I assumed that since the server was RAIDed that I needed to clear the config and reapply it with the new drives.</li>
+                    <li>This was a larger task than I intended, since it was necessary to backup my VMs since I don't want to have to recreate each one from scratch.</li>
+                    <li>Needed to install ntfs-3g on Proxmox in order to write to my external hard drive.</li>
+                </ul>
             </section>
         </div>
     </div>
