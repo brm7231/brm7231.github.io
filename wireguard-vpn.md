@@ -53,6 +53,14 @@ services:
 # cd ~/wireguard/
 # docker-compose up -d
 ~~~
+## Security and Updates:
+This installs another docker container that will periodically check for updates for docker containers and pull the latest updates for them.
+~~~
+# docker run -d \
+           --name watchtower \
+           -v /var/run/docker.sock:/var/run/docker.sock \
+           containrrr/watchtower wireguard
+~~~
 ## Install WireGuard on Phone and Laptop:
 Install for phone and laptop. (Visit https://www.wireguard.com/install/)
 ## Find QR Code:
